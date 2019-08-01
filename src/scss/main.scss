@@ -58,18 +58,22 @@ body {
   }
 
   &__label{
-    display: block;
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 14px;
-    line-height: 24px;
-    color: $light-gray;
+
   }
   &__message{
     width: 452px;
     height: 351px;
     padding: 16px;
+    &::placeholder{
+      display: block;
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      font-size: 14px;
+      line-height: 24px;
+      color: $light-gray;
+
+    }
   }
 
   &__wrapper{
