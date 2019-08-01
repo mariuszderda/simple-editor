@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <title>Site title</title>
+  <meta content="Description" name="description"/>
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+  <!-- Title -->
+  <meta content="" property="og:title"/>
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta content="" property="og:description"/>
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta content="" property="og:url"/>
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" property="og:image"/>
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link href="manifest.json" rel="manifest"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <link
+          href="assets/pwa/icons/icon-192x192.png"
+          rel="apple-touch-icon"
+          sizes="192x192"
+  />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link
+          href="assets/pwa/icons/icon-192x192.png"
+          rel="icon"
+          type="image/png"
+  />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-  <main class="main">
-    <h1>Simple editor</h1>
-    <form action="" class="form">
-      <p class="form__wrapper">
-        <label for="textarea" class="form__label">Textarea placeholder</label>
-          <textarea class="form__message" type="textarea" id="textarea"></textarea>
-      </p>
-      <div class="form__actions">
-        <button class="form__button form__button--load">load</button>
-        <button class="form__button form__button--save">save</button>
-      </div>
-    </form>
-  </main>
+  <link href="css/main.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="main">
+  <header class="header">
+    <h1 class="header__title">Simple editor</h1>
+  </header>
+  <form class="form">
+    <p class="form__wrapper">
+      <label class="form__label" for="textarea">Your message</label>
+      <textarea class="form__message" id="textarea"></textarea>
+    </p>
+    <div class="form__actions">
+      <button class="form__button form__button--load">load</button>
+      <button class="form__button form__button--save">save</button>
+    </div>
+  </form>
+</main>
 
-    <script src="js/main.js"></script>
-  </body>
+<script src="js/main.js"></script>
+</body>
 </html>
